@@ -15,6 +15,8 @@ public class Report {
         this.femaleVisitors = femaleVisitors;
         this.totalTicketSold = totalTicketSold;
         this.totalRevenue = totalRevenue;
+
+        
     }
 
     @Override
