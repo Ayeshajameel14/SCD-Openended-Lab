@@ -10,6 +10,7 @@ public class Employee extends Person{
         this.salary = salary;
         this.shiftSchedule = shiftSchedule;
     }
+    
     public void displayInfo() {
         super.displayInfo();
         System.out.println("Employee ID: " + employeeId);
@@ -17,6 +18,12 @@ public class Employee extends Person{
         System.out.println("Salary: " + salary);
         System.out.println("Shift Schedule: " + shiftSchedule);
     }
+
+     public void giveBonus(int bonusAmount) {
+        salary += bonusAmount; 
+        System.out.println("Bonus of " + bonusAmount + " added! New Salary: " + salary);
+    }
+
     public int getEmployeeId() {
         return employeeId;
     }
